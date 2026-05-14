@@ -1,0 +1,46 @@
+[33mfc1a21f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Remove hardcoded secret, use env variables
+[33m01336ae[m Hardcode supabase credentials for testing
+[33m14a9604[m[33m ([m[1;31morigin/main[m[33m)[m Add verification files for Google and Yandex
+[33m8ce7528[m Add verification files for Google and Yandex
+[33mc4267c3[m Add Google Search Console verification file
+[33mba34a86[m Fix order confirmation after rules acceptance
+[33m450be15[m Fix dropdown menu - now stays open when hovering
+[33m0cf8b50[m Fix dropdown menu - now stays open when hovering
+[33ma67df48[m Fix dropdown menu - now stays open when hovering
+[33m63f5dea[m Fix dropdown menu - now stays open when hovering
+[33m24f0036[m Fix dropdown menu - now stays open when hovering
+[33m8b62492[m Add ws package for WebSocket support, upgrade to Node 22
+[33mf3a97ff[m Set Node.js 20 engine
+[33mb27cb2e[m Add @supabase/supabase-js dependency
+[33m8553db7[m Ready server.js with Supabase
+[33m8b4be65[m Fix: выпадающее меню не исчезает при наведении
+[33mba87685[m Fix: выпадающее меню не исчезает при наведении
+[33m5000e63[m Fix: логотип слева, кнопка входа справа, поиск шире
+[33mb131c09[m Обновление дизайна: поиск по центру, окна авторизации шире
+[33mc525073[m Обновление дизайна: поиск по центру, окна авторизации шире
+[33m7eda90a[m Final fix: using JSON file storage instead of SQLite
+[33mc017267[m Fix: use sqlite3 instead of better-sqlite3
+[33m8043ff3[m Fix: force npm install instead of npm ci
+[33mdcb5e8d[m Add package-lock.json for Railway deployment
+[33m0ad4bac[m Add nixpacks config for Railway
+[33mea6b130[m Add files for Railway deployment
+[33m23b98f3[m Fix: better-sqlite3 for Railway
+[33m77a7aa1[m Fix: use sqlite3 instead of better-sqlite3
+[33m6fcf619[m Fix: полный набор товаров, ароматизаторы, автохимия
+[33m3fc9f16[m Revert to working version
+[33mbc5b5a7[m Добавлен Procfile для Railway
+[33meec2fa1[m Добавлены зависимости для Railway
+[33mf2ac553[m Обновление: ароматизаторы, автохимия, выбор количества, VIN поиск, техподдержка
+[33ma756b12[m Обновление магазина: добавлены ароматизаторы, автохимия, выбор количества товаров, VIN поиск, техподдержка, адаптив
+[33m15decdd[m your message
+[33mf80df2d[m Обновление сайта
+[33m0998e37[m Add Yandex Metrika
+[33m9fd596c[m Fix API URLs
+[33m4a91cc7[m Delete node_modules directory
+[33m23de8e6[m Replace sqlite3 with better-sqlite3
+[33m7056d9c[m Fix Node version
+[33m9c0e713[m Update server.js
+[33m736bd45[m Delete node_modules directory
+[33m0428750[m Remove node_modules
+[33m84d8c48[m Update package.json
+[33m805bdef[m Первый коммит

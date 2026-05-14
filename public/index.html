@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109092420', 'ym');
+    ym(109092420, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109092420" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <meta charset="UTF-8">
+  <title>Автостиль - Запчасти для LADA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * { 
+      box-sizing: border-box; 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+    }
+    body { 
+      margin: 0; 
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+      min-height: 100vh;
+    }
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    header {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 2px solid #f0f0f0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    @media (min-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+      }
+      .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2c3e50;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .logo i {
+      color: #e74c3c;
+    }
+    .search-bar {
+      margin: 10px 0;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 768px) {
+      .search-bar {
+        margin: 0 15px;
+        flex: 1;
+        max-width: 400px;
+      }
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 10px 15px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .search-bar button {
+      padding: 10px 18px;
+      margin: 0;
+    }
+    .user-menu {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 25px 20px;
+      text-align: left;
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 3px solid #e74c3c;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 25px 40px;
+      }
+    }
+    .footer-info {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #bdc3c7;
+    }
+    main { 
+      flex: 1; 
+      padding: 20px; 
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 40px;
+      }
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 28px;
+      color: #e74c3c;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 26px; }
+    }
+    h2 {
+      font-size: 22px;
+      border-bottom: 3px solid #e74c3c;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+    button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      background: #e74c3c;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    button:hover { 
+      background: #c0392b; 
+      transform: translateY(-2px);
+    }
+    button.gray { background: #95a5a6; }
+    button.gray:hover { background: #7f8c8d; }
+    button.blue { background: #3498db; }
+    button.blue:hover { background: #2980b9; }
+    button.green { background: #27ae60; }
+    button.green:hover { background: #219653; }
+    button.small { padding: 6px 12px; font-size: 12px; }
+    .hidden { display: none; }
+    .item {
+      background: #fff;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      border-left: 4px solid #e74c3c;
+      gap: 10px;
+    }
+    .item-info {
+      flex: 1;
+      min-width: 200px;
+    }
+    .item-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .quantity-selector {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f0f0f0;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+    .quantity-selector button {
+      padding: 4px 10px;
+      font-size: 16px;
+      background: #ddd;
+      color: #333;
+    }
+    .quantity-selector button:hover {
+      background: #bbb;
+      transform: none;
+    }
+    .quantity-selector span {
+      min-width: 35px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .stock-badge {
+      font-size: 12px;
+      color: #27ae60;
+      margin-top: 5px;
+    }
+    .stock-badge.low {
+      color: #e74c3c;
+    }
+    .heart { 
+      cursor: pointer; 
+      font-size: 28px; 
+      transition: all 0.3s ease;
+    }
+    .heart:hover { transform: scale(1.2); }
+    .heart.red-heart { color: #e74c3c; }
+    .heart.white-heart { color: #bdc3c7; }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+    .error { 
+      color: #e74c3c; 
+      font-size: 12px; 
+      margin-top: -5px;
+      margin-bottom: 10px;
+    }
+    .auth-form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border-top: 4px solid #e74c3c;
+    }
+    .cart-item, .order-item {
+      background: #fff;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      border-left: 4px solid #e74c3c;
+    }
+    .cart-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    .remove-btn, .cancel-order-btn {
+      background: #e74c3c;
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+    .remove-btn:hover, .cancel-order-btn:hover {
+      background: #c0392b;
+    }
+    .catalog-category {
+      background: #fff;
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      border-left: 4px solid #e74c3c;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .catalog-category i {
+      color: #e74c3c;
+      font-size: 20px;
+    }
+    .catalog-category:hover {
+      transform: translateX(8px);
+      background: #f8f9fa;
+    }
+    .empty-message {
+      text-align: center;
+      color: #7f8c8d;
+      padding: 40px 20px;
+      background: #fff;
+      border-radius: 12px;
+    }
+    .home-background {
+      background: linear-gradient(135deg, rgba(231,76,60,0.9), rgba(192,57,43,0.9));
+      min-height: 200px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    @media (min-width: 768px) {
+      .home-background { min-height: 300px; padding: 40px; }
+      .home-background h1 { font-size: 36px; }
+    }
+    .home-background h1 {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
+    }
+    .home-content {
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+    .col {
+      flex: 1;
+      padding: 0 10px;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+    .feature-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      height: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-left: 4px solid #e74c3c;
+    }
+    .feature-card i {
+      font-size: 36px;
+      color: #e74c3c;
+      margin-bottom: 15px;
+    }
+    .shop-location {
+      margin-top: 40px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    @media (min-width: 768px) {
+      .shop-location { padding: 30px; }
+    }
+    .shop-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      align-items: center;
+    }
+    .shop-details { flex: 1; text-align: left; }
+    .shop-details h3 { color: #2c3e50; margin-bottom: 15px; }
+    .shop-details p { color: #7f8c8d; margin-bottom: 10px; }
+    .shop-details i { width: 25px; color: #e74c3c; }
+    .shop-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+    .shop-map { flex: 1; min-width: 250px; }
+    .shop-map img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 600;
+      z-index: 10000;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: slideIn 0.3s ease;
+      max-width: 350px;
+    }
+    .notification.success { background: linear-gradient(135deg, #27ae60, #219653); }
+    .notification.error { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+    .notification.info { background: linear-gradient(135deg, #3498db, #2980b9); }
+    @keyframes slideIn {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideOut {
+      from { transform: translateX(0); opacity: 1; }
+      to { transform: translateX(100%); opacity: 0; }
+    }
+    .card-fields {
+      display: none;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+    .card-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .card-row .col { flex: 1; min-width: 120px; margin-bottom: 0; }
+    .profile-menu { position: relative; display: inline-block; }
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: #fff;
+      min-width: 220px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border-radius: 10px;
+      z-index: 1000;
+      margin-top: 5px;
+      border-top: 3px solid #e74c3c;
+    }
+    .profile-menu:hover .profile-dropdown { display: block; }
+    .profile-dropdown a, .profile-dropdown button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      color: #2c3e50;
+      text-decoration: none;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .profile-dropdown a:hover, .profile-dropdown button:hover {
+      background: #f8f9fa;
+      color: #e74c3c;
+    }
+    .profile-dropdown hr { margin: 8px 0; border-color: #ecf0f1; }
+    .profile-btn {
+      background: #e74c3c !important;
+      border-radius: 6px !important;
+      padding: 8px 16px !important;
+    }
+    .profile-btn::after { content: '▼'; font-size: 10px; margin-left: 8px; }
+    .cart-count, .fav-count {
+      background: #e74c3c;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      margin-left: 6px;
+    }
+    .rules-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10001;
+    }
+    .rules-modal-content {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      max-width: 500px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    .rules-checkbox {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+      align-items: center;
+    }
+    .product-characteristics {
+      font-size: 13px;
+      color: #7f8c8d;
+      margin-top: 6px;
+    }
+    .vin-note, .lada-note {
+      background: #fff3cd;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 15px 0;
+      text-align: center;
+      color: #856404;
+    }
+    .support-offline {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      button { padding: 10px 16px; font-size: 12px; }
+      .item { flex-direction: column; text-align: center; }
+      .item-actions { justify-content: center; }
+      .logo { font-size: 18px; }
+    }
+    .profile-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  min-width: 220px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  z-index: 1000;
+  margin-top: 0;
+  border-top: 3px solid #e74c3c;
+  animation: fadeIn 0.15s ease;
+}
+
+/* Меню показывается при наведении на кнопку */
+.profile-menu:hover .profile-dropdown {
+  display: block;
+}
+
+/* Дополнительная зона - мост между кнопкой и меню */
+.profile-menu {
+  padding-bottom: 15px;
+  margin-bottom: -15px;
+}
+
+/* Увеличиваем зону наведения на меню */
+.profile-dropdown {
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+/* Плавное появление */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Стили для пунктов меню */
+.profile-dropdown a,
+.profile-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: #2c3e50;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  background: #f8f9fa;
+  color: #e74c3c;
+  padding-left: 25px;
+}
+
+.profile-dropdown hr {
+  margin: 8px 0;
+  border: none;
+  border-top: 1px solid #ecf0f1;
+}
+  </style>
+</head>
+<body>
+
+<!-- Модальное окно с правилами -->
+<div id="rulesModal" class="rules-modal">
+  <div class="rules-modal-content">
+    <h2><i class="fas fa-gavel"></i> Правила магазина</h2>
+    <ul style="line-height: 1.8;">
+      <li>Проверяйте совместимость товаров перед заказом</li>
+      <li>Возврат возможен в течение 14 дней при наличии чека</li>
+      <li>После оформления товар резервируется на 24 часа</li>
+      <li>Доступны запчасти только для автомобилей LADA</li>
+      <li>Товар готов к выдаче на следующий день после заказа</li>
+    </ul>
+    <div class="rules-checkbox">
+      <input type="checkbox" id="acceptRules">
+      <label>Я согласен с правилами магазина</label>
+    </div>
+    <button onclick="closeRulesModal()" class="green" style="width:100%">Продолжить</button>
+  </div>
+</div>
+
+<div class="wrapper">
+  <header style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 15px 20px;">
+  <div class="logo"><i class="fas fa-car"></i> АВТОСТИЛЬ</div>
+  
+  <div style="flex: 1; max-width: 500px; margin: 0 20px;">
+    <div style="display: flex; gap: 10px;">
+      <input id="searchInput" type="text" placeholder="Поиск товаров по названию, категории, характеристикам..." style="flex: 1; padding: 10px 15px; border: 2px solid #ddd; border-radius: 8px;">
+      <button onclick="searchProducts()" class="blue" style="padding: 10px 20px;"><i class="fas fa-search"></i> ПОИСК</button>
+    </div>
+  </div>
+  
+  <div class="user-menu">
+    <div id="userInfo" style="font-size: 13px;"></div>
+    <button id="loginBtn" onclick="show('login')" class="blue">ВОЙТИ</button>
+    <div id="userPanel" class="hidden">
+      <div class="profile-menu">
+        <button class="profile-btn"><i class="fas fa-user-circle"></i> Кабинет</button>
+        <div class="profile-dropdown">
+          <a onclick="show('catalog')"><i class="fas fa-list"></i> Каталог</a>
+          <a onclick="show('orders')"><i class="fas fa-clipboard-list"></i> Мои заказы</a>
+          <a onclick="show('favorites')"><i class="fas fa-heart"></i> Избранное <span id="favCount" class="fav-count">0</span></a>
+          <a onclick="openCart()"><i class="fas fa-shopping-cart"></i> Корзина <span id="cartCount" class="cart-count">0</span></a>
+          <hr>
+          <button onclick="logout()"><i class="fas fa-sign-out-alt"></i> Выйти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <div class="container">
+      <!-- Главная страница -->
+      <section id="home">
+        <div class="home-background">
+          <div>
+            <h1>АВТОЗАПЧАСТИ LADA</h1>
+            <p style="font-size: 16px;">Оригинальные запчасти, аксессуары и автохимия</p>
+          </div>
+        </div>
+        <div class="home-content">
+          <p style="font-size: 16px; margin-bottom: 30px;">✅ Товары приезжают быстро и всегда доступны к заказу в течение 24 часов</p>
+          <div class="row">
+            <div class="col"><div class="feature-card"><i class="fas fa-shield-alt"></i><h3>Гарантия качества</h3><p>Все запчасти сертифицированы</p></div></div>
+            <div class="col"><div class="feature-card"><i class="fas fa-shipping-fast"></i><h3>Быстрая готовность</h3><p>Товар готов к выдаче на следующий день</p></div></div>
+            <div class="col"><div class="feature-card"><i class="fas fa-headset"></i><h3>Поддержка</h3><p>Консультации специалистов</p></div></div>
+          </div>
+          <div style="margin-top: 30px;">
+            <button onclick="show('catalog')" class="green" style="font-size: 16px;"><i class="fas fa-arrow-right"></i> ПЕРЕЙТИ В КАТАЛОГ</button>
+            <button onclick="scrollToSection('contacts-section')" class="blue" style="font-size: 16px;"><i class="fas fa-info-circle"></i> О нас / Контакты</button>
+            <button onclick="showSupportForm()" class="gray" style="font-size: 16px;"><i class="fas fa-headset"></i> Тех. поддержка</button>
+          </div>
+        </div>
+
+        <!-- Блок О нас / Контакты -->
+        <div id="contacts-section" style="margin-top: 50px; background: #fff; border-radius: 12px; padding: 20px;">
+          <h2><i class="fas fa-address-card"></i> О нас / Контакты</h2>
+          <div class="shop-info">
+            <div class="shop-details">
+              <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> г. Кемерово, пр-т Кузнецкий 58</p>
+              <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (3842) 77-34-50</p>
+              <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@autostyle.ru</p>
+              <p><i class="fas fa-clock"></i> <strong>Режим работы:</strong> Пн-Вс: 09:00 - 20:00</p>
+              <div class="shop-buttons">
+                <button onclick="window.open('https://2gis.ru/kemerovo/geo/704323096938049?m=86.063908%2C55.350709%2F17.67', '_blank')" class="blue"><i class="fas fa-car"></i> Доехать с 2ГИС</button>
+                <button onclick="window.open('https://2gis.ru/kemerovo/geo/704323096938049?m=86.063908%2C55.350709%2F17.67', '_blank')" class="green"><i class="fas fa-external-link-alt"></i> Открыть в 2GIS</button>
+              </div>
+            </div>
+            <div class="shop-map">
+              <a href="https://freeimage.host/i/B7ytWXV"><img src="https://iili.io/B7ytWXV.md.png" alt="Карта"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIN поиск -->
+        <div id="vin-section" style="margin-top: 30px; background: #fff; border-radius: 12px; padding: 20px;">
+          <h2><i class="fas fa-search"></i> Поиск по VIN / автомобилю</h2>
+          <div class="vin-note">
+            <i class="fas fa-info-circle"></i> Поиск по VIN номеру временно недоступен
+          </div>
+          <div class="lada-note">
+            <i class="fas fa-car"></i> В настоящий момент доступны запчасти только для автомобилей LADA
+          </div>
+          <input type="text" placeholder="Введите VIN номер или модель авто" disabled style="background:#f5f5f5">
+          <button disabled class="gray" style="margin-top: 10px;">Поиск (недоступно)</button>
+        </div>
+
+        <!-- Техподдержка -->
+        <div id="support-form" style="margin-top: 30px; background: #fff; border-radius: 12px; padding: 20px; display: none;">
+          <h2><i class="fas fa-headset"></i> Техническая поддержка</h2>
+          <div class="support-offline">
+            <i class="fas fa-exclamation-triangle"></i> Техническая поддержка временно работает в оффлайн-режиме.<br>Мы свяжемся с вами в ближайшее время!
+          </div>
+          <input type="text" id="supportName" placeholder="Ваше имя">
+          <input type="text" id="supportContact" placeholder="Телефон или Email">
+          <textarea id="supportMessage" rows="4" placeholder="Опишите вашу проблему..."></textarea>
+          <button onclick="sendSupportRequest()" class="blue"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
+          <button onclick="hideSupportForm()" class="gray" style="margin-top: 10px;">Закрыть</button>
+        </div>
+      </section>
+
+      <!-- Остальные секции -->
+      <section id="login" class="hidden">
+  <div style="max-width: 500px; margin: 0 auto;">
+    <h2 style="text-align: center;">Авторизация</h2>
+    <div class="auth-form" style="padding: 40px;">
+      <div style="text-align: center; margin-bottom: 25px;">
+        <i class="fas fa-user-lock" style="font-size: 64px; color: #e74c3c;"></i>
+      </div>
+      <input id="loginEmail" placeholder="E-MAIL" type="email" style="padding: 14px; font-size: 16px;">
+      <input id="loginPass" type="password" placeholder="ПАРОЛЬ" style="padding: 14px; font-size: 16px;">
+      <div id="loginError" class="error"></div>
+      <button onclick="login()" class="green" style="width: 100%; padding: 14px; margin-top: 10px;">ВОЙТИ</button>
+      <button onclick="show('register')" class="gray" style="width: 100%; margin-top: 10px;">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      <button class="gray" onclick="show('home')" style="width: 100%; margin-top: 10px;">На главную</button>
+    </div>
+  </div>
+</section>
+
+      <section id="register" class="hidden">
+  <div style="max-width: 500px; margin: 0 auto;">
+    <h2 style="text-align: center;">Регистрация</h2>
+    <div class="auth-form" style="padding: 40px;">
+      <div style="text-align: center; margin-bottom: 25px;">
+        <i class="fas fa-user-plus" style="font-size: 64px; color: #e74c3c;"></i>
+      </div>
+      <input id="regEmail" placeholder="E-MAIL" type="email" style="padding: 14px; font-size: 16px;">
+      <div id="regEmailError" class="error"></div>
+      <input id="regPass" type="password" placeholder="ПАРОЛЬ (мин. 8 символов)" style="padding: 14px; font-size: 16px;">
+      <div id="regPassError" class="error"></div>
+      <input id="regPhone" placeholder="ТЕЛЕФОН (7-XXX-XXX-XX-XX)" maxlength="16" style="padding: 14px; font-size: 16px;">
+      <div id="regPhoneError" class="error"></div>
+      <button onclick="register()" class="green" style="width: 100%; padding: 14px; margin-top: 10px;">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      <p style="margin-top: 20px; text-align: center;">Уже зарегистрированы? <a href="#" onclick="show('login')" style="color:#e74c3c">ВОЙТИ</a></p>
+      <button class="gray" onclick="show('home')" style="width: 100%; margin-top: 10px;">На главную</button>
+    </div>
+  </div>
+</section>
+
+      <section id="catalog" class="hidden">
+        <h2>Каталог товаров</h2>
+        <div class="lada-note" style="margin-bottom: 20px;"><i class="fas fa-car"></i> Доступны запчасти для LADA, а также ароматизаторы и автохимия</div>
+        <div id="catalogItems"></div>
+        <button class="gray" onclick="show('home')">На главную</button>
+      </section>
+
+      <section id="category" class="hidden">
+        <h2 id="categoryTitle">Категория</h2>
+        <div id="categoryProducts"></div>
+        <button class="gray" onclick="show('catalog')">← Назад в каталог</button>
+      </section>
+
+      <section id="cart" class="hidden">
+        <h2>Корзина</h2>
+        <div id="cartItems"></div>
+        <h3 id="total" style="color:#e74c3c;"></h3>
+        <button onclick="show('order')" class="green" id="checkoutBtn">Оформить заказ</button>
+        <button class="gray" onclick="show('catalog')">Вернуться в каталог</button>
+      </section>
+
+      <section id="order" class="hidden">
+        <h2>Оформление заказа</h2>
+        <div class="auth-form">
+          <select id="pickup">
+            <option value="">Выберите пункт выдачи</option>
+            <option value="Кемерово, пр-т Кузнецкий 58">Кемерово, пр-т Кузнецкий 58</option>
+            <option value="Кемерово, ул. Советская 45">Кемерово, ул. Советская 45</option>
+            <option value="Новокузнецк, ул. Кирова 12">Новокузнецк, ул. Кирова 12</option>
+          </select>
+          <div id="pickupError" class="error"></div>
+          <input id="orderPhone" placeholder="Телефон (7-XXX-XXX-XX-XX)" maxlength="16">
+          <div id="orderPhoneError" class="error"></div>
+          <select id="pay" onchange="toggleCardFields()">
+            <option value="">Способ оплаты</option>
+            <option value="Карта">Карта</option>
+            <option value="Наличные">Наличные</option>
+          </select>
+          <div id="payError" class="error"></div>
+          <div id="cardFields" class="card-fields">
+            <input id="cardNumber" placeholder="Номер карты (XXXX XXXX XXXX XXXX)" maxlength="19">
+            <div class="card-row">
+              <div class="col"><input id="cardExpiry" placeholder="ММ/ГГ" maxlength="5"></div>
+              <div class="col"><input id="cardCVV" placeholder="CVV" maxlength="3" type="password"></div>
+            </div>
+          </div>
+          <button onclick="finish()" class="green">Подтвердить заказ</button>
+          <button class="gray" onclick="show('cart')">← Вернуться в корзину</button>
+        </div>
+      </section>
+
+      <section id="orders" class="hidden">
+        <h2>Мои заказы</h2>
+        <div id="ordersList"></div>
+        <button class="gray" onclick="show('catalog')">Вернуться в каталог</button>
+      </section>
+
+      <section id="favorites" class="hidden">
+        <h2>Избранное</h2>
+        <div id="favoritesItems"></div>
+        <button class="gray" onclick="show('catalog')">Вернуться в каталог</button>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col"><div class="footer-info"><p><i class="fas fa-map-marker-alt"></i> г. Кемерово, пр-т Кузнецкий 58</p><p><i class="fas fa-phone"></i> +7 (3842) 77-34-50</p><p><i class="fas fa-envelope"></i> info@autostyle.ru</p></div></div>
+        <div class="col"><div style="font-size: 12px;">© 2025 Компания Автостиль. Все права защищены.</div></div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+let cart = [];
+let user = null;
+let favorites = [];
+let products = [];
+
+// Загрузка товаров
+async function loadProducts() {
+  try {
+    const response = await fetch('/api/products');
+    products = await response.json();
+    console.log('Товаров загружено:', products.length);
+  } catch (error) {
+    console.error('Ошибка загрузки товаров:', error);
+    products = [];
+  }
+}
+
+function saveCart() { if(user) localStorage.setItem(`cart_${user.email}`, JSON.stringify(cart)); else localStorage.setItem('cart', JSON.stringify(cart)); }
+function saveFavorites() { if(user) localStorage.setItem(`favorites_${user.email}`, JSON.stringify(favorites)); else localStorage.setItem('favorites', JSON.stringify(favorites)); updateFavCount(); }
+function updateFavCount() { let el = document.getElementById('favCount'); if(el) { el.textContent = favorites.length; el.style.display = favorites.length > 0 ? 'inline-block' : 'none'; } }
+function validatePassword(p) { return p.length >= 8; }
+function validateEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+function validatePhone(p) { return /^7-\d{3}-\d{3}-\d{2}-\d{2}$/.test(p); }
+
+function show(id) {
+  document.querySelectorAll("section").forEach(s => s.classList.add("hidden"));
+  document.getElementById(id).classList.remove("hidden");
+  if(id === "cart") renderCart();
+  if(id === "catalog") renderCatalog();
+  if(id === "orders") renderOrders();
+  if(id === "favorites") renderFavorites();
+}
+
+function showSupportForm() {
+  document.getElementById('support-form').style.display = 'block';
+  document.getElementById('support-form').scrollIntoView({ behavior: 'smooth' });
+}
+function hideSupportForm() { document.getElementById('support-form').style.display = 'none'; }
+
+async function sendSupportRequest() {
+  let name = document.getElementById('supportName').value;
+  let contact = document.getElementById('supportContact').value;
+  let message = document.getElementById('supportMessage').value;
+  if(!name || !contact || !message) { showNotification("Заполните все поля", "error"); return; }
+  try {
+    let res = await fetch('/api/support', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({name,contact,message}) });
+    let data = await res.json();
+    if(data.success) {
+      showNotification("Заявка отправлена! Мы свяжемся с вами.", "success");
+      document.getElementById('supportName').value = '';
+      document.getElementById('supportContact').value = '';
+      document.getElementById('supportMessage').value = '';
+      hideSupportForm();
+    }
+  } catch(e) { showNotification("Ошибка отправки", "error"); }
+}
+
+function closeRulesModal() {
+  const checkbox = document.getElementById('acceptRules');
+  if(!checkbox.checked) { 
+    alert("Подтвердите согласие с правилами"); 
+    return; 
+  }
+  // Сохраняем, что пользователь согласился
+  localStorage.setItem('rulesAccepted', 'true');
+  // Закрываем модальное окно
+  document.getElementById('rulesModal').style.display = 'none';
+  // ПРОДОЛЖАЕМ оформление заказа
+  finish();
+}
+
+async function register() {
+  let email = regEmail.value.trim(), phone = regPhone.value.trim(), password = regPass.value;
+  if(!validatePassword(password)) { regPassError.textContent = 'Пароль не менее 8 символов'; return; }
+  if(!validatePhone(phone)) { regPhoneError.textContent = 'Формат: 7-XXX-XXX-XX-XX'; return; }
+  if(!validateEmail(email)) { regEmailError.textContent = 'Некорректный email'; return; }
+  try {
+    let res = await fetch('/api/register', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({email,password,phone}) });
+    let data = await res.json();
+    if(data.success) { showNotification("Регистрация успешна!", "success"); loginEmail.value = email; loginPass.value = password; login(); }
+    else { regEmailError.textContent = data.error; }
+  } catch(e) { regEmailError.textContent = 'Ошибка сервера'; }
+}
+
+async function login(email, password) {
+  email = email || loginEmail.value.trim();
+  password = password || loginPass.value;
+  if(!email || !password) { loginError.textContent = 'Заполните поля'; return; }
+  try {
+    let res = await fetch('/api/login', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({email,password}) });
+    let data = await res.json();
+    if(data.success) {
+      user = data.user;
+      let savedCart = localStorage.getItem(`cart_${user.email}`);
+      cart = savedCart ? JSON.parse(savedCart) : [];
+      let savedFav = localStorage.getItem(`favorites_${user.email}`);
+      favorites = savedFav ? JSON.parse(savedFav) : [];
+      document.getElementById('loginBtn').classList.add('hidden');
+      document.getElementById('userPanel').classList.remove('hidden');
+      document.getElementById('userInfo').textContent = `${user.email}`;
+      updateFavCount();
+      document.getElementById('cartCount').innerText = cart.length;
+      showNotification("Добро пожаловать!", "success");
+      show('catalog');
+    } else { loginError.textContent = data.error; }
+  } catch(e) { loginError.textContent = 'Ошибка сервера'; }
+}
+
+function logout() {
+  if(confirm("Выйти?")) { saveCart(); saveFavorites(); user=null; cart=[]; favorites=[];
+    document.getElementById('loginBtn').classList.remove('hidden');
+    document.getElementById('userPanel').classList.add('hidden');
+    document.getElementById('userInfo').textContent = '';
+    document.getElementById('cartCount').innerText = 0;
+    show('home');
+  }
+}
+
+function renderCatalog() {
+  let cats = ['Двигатель','Тормозная система','Подвеска','Электрика','Ароматизаторы','Автохимия'];
+  let icons = ['fa-cogs','fa-tachometer-alt','fa-car-side','fa-bolt','fa-leaf','fa-tint'];
+  let html = '';
+  cats.forEach((cat,i) => { html += `<div class="catalog-category" onclick="showCategory('${cat}')"><i class="fas ${icons[i]}"></i> ${cat}</div>`; });
+  document.getElementById('catalogItems').innerHTML = html;
+}
+
+function showCategory(categoryName) {
+  show('category');
+  document.getElementById('categoryTitle').textContent = categoryName;
+  let container = document.getElementById('categoryProducts');
+  let items = products.filter(p => p.category === categoryName);
+  if(!items.length) { container.innerHTML = '<div class="empty-message">Товаров нет</div>'; return; }
+  container.innerHTML = '';
+  items.forEach(p => {
+    let inCart = cart.some(i => i.id === p.id);
+    let fav = favorites.includes(p.id);
+    let stockLeft = p.stock;
+    container.innerHTML += `
+      <div class="item">
+        <div class="item-info">
+          <strong style="font-size:16px;">${p.name}</strong>
+          <div class="product-characteristics"><i class="fas fa-info-circle"></i> ${p.characteristics || 'Характеристики не указаны'}</div>
+          <div><span style="color:#e74c3c;font-weight:600;font-size:18px;">${p.price} ₽</span></div>
+          <div class="stock-badge ${stockLeft < 5 ? 'low' : ''}"><i class="fas fa-boxes"></i> В наличии: ${stockLeft} шт.</div>
+        </div>
+        <div class="item-actions">
+          <div class="quantity-selector" id="qty-${p.id}">
+            <button onclick="changeQuantity(${p.id}, -1)">-</button>
+            <span id="qty-val-${p.id}">1</span>
+            <button onclick="changeQuantity(${p.id}, 1)">+</button>
+          </div>
+          <button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="${inCart ? 'gray' : 'green'} small">${inCart ? 'В корзине' : 'В корзину'}</button>
+          <span class="heart ${fav ? 'red-heart' : 'white-heart'}" onclick="toggleFavorite(${p.id})">${fav ? '❤️' : '🤍'}</span>
+        </div>
+      </div>
+    `;
+  });
+}
+
+let quantities = {};
+
+function changeQuantity(id, delta) {
+  let prod = products.find(p => p.id === id);
+  if(!prod) return;
+  let current = quantities[id] || 1;
+  let newVal = current + delta;
+  if(newVal < 1) newVal = 1;
+  if(newVal > prod.stock) newVal = prod.stock;
+  quantities[id] = newVal;
+  let span = document.getElementById(`qty-val-${id}`);
+  if(span) span.textContent = newVal;
+}
+
+function addWithQuantity(id) {
+  if(!user) { showAuthRequired(); return; }
+  let prod = products.find(p => p.id === id);
+  let qty = quantities[id] || 1;
+  if(qty > prod.stock) { showNotification(`Доступно только ${prod.stock} шт.`, "error"); return; }
+  if(cart.some(i => i.id === id)) { showNotification("Товар уже в корзине", "info"); return; }
+  cart.push({...prod, quantity: qty});
+  document.getElementById('cartCount').innerText = cart.length;
+  saveCart();
+  showNotification(`Добавлено: ${qty} шт. "${prod.name}"`, "success");
+  renderCategoryIfOpen();
+}
+
+function renderCategoryIfOpen() {
+  let catTitle = document.getElementById('categoryTitle');
+  if(catTitle && !document.getElementById('category').classList.contains('hidden')) {
+    showCategory(catTitle.textContent);
+  }
+}
+
+function toggleFavorite(id) {
+  if(!user) { showAuthRequired(); return; }
+  let idx = favorites.indexOf(id);
+  if(idx === -1) { favorites.push(id); showNotification("Добавлено в избранное", "success"); }
+  else { favorites.splice(idx,1); showNotification("Удалено из избранного", "info"); }
+  saveFavorites();
+  renderCategoryIfOpen();
+  if(!document.getElementById('favorites').classList.contains('hidden')) renderFavorites();
+}
+
+function renderCart() {
+  let container = document.getElementById('cartItems');
+  if(!cart.length) { container.innerHTML = '<div class="empty-message">Корзина пуста</div>'; document.getElementById('checkoutBtn').disabled = true; document.getElementById('total').innerHTML = ''; return; }
+  let total = 0;
+  container.innerHTML = '';
+  cart.forEach((item, idx) => {
+    total += item.price * (item.quantity || 1);
+    container.innerHTML += `
+      <div class="cart-item">
+        <div><strong>${item.name}</strong><br>${item.price} ₽ × ${item.quantity || 1} = <span style="color:#e74c3c;">${item.price * (item.quantity || 1)} ₽</span></div>
+        <button class="remove-btn" onclick="removeFromCart(${idx})"><i class="fas fa-trash"></i> Удалить</button>
+      </div>
+    `;
+  });
+  document.getElementById('total').innerHTML = `Итого: ${total} ₽`;
+  document.getElementById('checkoutBtn').disabled = false;
+}
+
+function removeFromCart(idx) {
+  cart.splice(idx,1);
+  saveCart();
+  document.getElementById('cartCount').innerText = cart.length;
+  renderCart();
+  renderCategoryIfOpen();
+}
+
+function openCart() { if(!user) { showAuthRequired(); return; } show('cart'); }
+
+async function finish() {
+  if(!user) { 
+    showNotification("Войдите в аккаунт", "error"); 
+    show('login');
+    return; 
+  }
+  if(!cart.length) { 
+    showNotification("Корзина пуста", "error"); 
+    return; 
+  }
+  
+  // Проверяем согласие с правилами
+  const rulesAccepted = localStorage.getItem('rulesAccepted');
+  if(!rulesAccepted) { 
+    // Показываем окно правил и запоминаем, что нужно продолжить
+    document.getElementById('rulesModal').style.display = 'flex';
+    return; 
+  }
+  
+  const pickup = document.getElementById('pickup').value;
+  const pay = document.getElementById('pay').value;
+  const phone = document.getElementById('orderPhone').value;
+  
+  // Очищаем ошибки
+  document.getElementById('pickupError').textContent = '';
+  document.getElementById('payError').textContent = '';
+  document.getElementById('orderPhoneError').textContent = '';
+  
+  let hasError = false;
+  
+  if(!pickup) { 
+    document.getElementById('pickupError').textContent = 'Выберите пункт выдачи'; 
+    hasError = true;
+  }
+  if(!pay) { 
+    document.getElementById('payError').textContent = 'Выберите способ оплаты'; 
+    hasError = true;
+  }
+  if(!phone) { 
+    document.getElementById('orderPhoneError').textContent = 'Введите телефон'; 
+    hasError = true;
+  } else if (!validatePhone(phone)) { 
+    document.getElementById('orderPhoneError').textContent = 'Формат: 7-XXX-XXX-XX-XX'; 
+    hasError = true;
+  }
+  
+  if(pay === 'Карта') {
+    const cardNum = document.getElementById('cardNumber').value.replace(/\s/g,'');
+    const expiry = document.getElementById('cardExpiry').value;
+    const cvv = document.getElementById('cardCVV').value;
+    if(!cardNum || cardNum.length !== 16) { 
+      showNotification("Неверный номер карты", "error"); 
+      hasError = true;
+    }
+    if(!expiry || !/^\d{2}\/\d{2}$/.test(expiry)) { 
+      showNotification("Неверный срок действия", "error"); 
+      hasError = true;
+    }
+    if(!cvv || cvv.length !== 3) { 
+      showNotification("Неверный CVV", "error"); 
+      hasError = true;
+    }
+  }
+  
+  if(hasError) return;
+  
+  const total = cart.reduce((s, i) => s + i.price * (i.quantity || 1), 0);
+  const itemsForOrder = cart.map(i => ({ 
+    id: i.id, 
+    name: i.name, 
+    price: i.price, 
+    quantity: i.quantity || 1 
+  }));
+  
+  try {
+    const res = await fetch('/api/orders', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        user_id: user.id,
+        user_email: user.email,
+        user_phone: phone,
+        pickup_point: pickup,
+        payment_method: pay,
+        total: total,
+        items: itemsForOrder
+      })
+    });
+    
+    const data = await res.json();
+    
+    if(data.success) {
+      showNotification(`Заказ №${data.orderId} оформлен! Готов к выдаче ${data.deliveryDate}`, "success", 5000);
+      cart = [];
+      saveCart();
+      document.getElementById('cartCount').innerText = 0;
+      renderCart();
+      show('orders');
+      renderOrders();
+    } else {
+      showNotification(data.error || "Ошибка при оформлении заказа", "error");
+    }
+  } catch(e) {
+    showNotification("Ошибка сервера", "error");
+    console.error(e);
+  }
+}
+
+async function renderOrders() {
+  if(!user) { document.getElementById('ordersList').innerHTML = '<div class="empty-message">Войдите для просмотра заказов</div>'; return; }
+  try {
+    let res = await fetch(`/api/orders/${user.email}`);
+    let orders = await res.json();
+    if(!orders.length) { document.getElementById('ordersList').innerHTML = '<div class="empty-message">У вас пока нет заказов</div>'; return; }
+    let html = '';
+    for(let order of orders) {
+      let items = JSON.parse(order.items);
+      html += `<div class="order-item"><div><strong>Заказ №${order.id}</strong> от ${new Date(order.order_date).toLocaleDateString()}<br>Статус: ${order.status === 'processing' ? '✅ Активен' : '❌ Отменен'}<br>Сумма: ${order.total} ₽<br>Готов к выдаче: ${new Date(order.delivery_date).toLocaleDateString()}<br>Пункт: ${order.pickup_point}</div><div style="margin-top:10px;"><strong>Товары:</strong><br>${items.map(i => `${i.name} - ${i.quantity} шт.`).join('<br>')}</div>${order.status === 'processing' ? `<button onclick="cancelOrder(${order.id})" class="cancel-order-btn" style="margin-top:10px;">Отменить заказ</button>` : ''}</div>`;
+    }
+    document.getElementById('ordersList').innerHTML = html;
+  } catch(e) { document.getElementById('ordersList').innerHTML = '<div class="empty-message">Ошибка загрузки</div>'; }
+}
+
+async function cancelOrder(id) {
+  if(confirm("Отменить заказ?")) {
+    await fetch(`/api/orders/${id}/cancel`, { method:'PUT' });
+    showNotification("Заказ отменен", "info");
+    renderOrders();
+  }
+}
+
+function renderFavorites() {
+  let favItems = favorites.map(id => products.find(p => p.id === id)).filter(p => p);
+  if(!favItems.length) { document.getElementById('favoritesItems').innerHTML = '<div class="empty-message">Нет избранных товаров</div>'; return; }
+  let html = '';
+  favItems.forEach(p => {
+    let inCart = cart.some(i => i.id === p.id);
+    html += `<div class="item"><div class="item-info"><strong>${p.name}</strong><br>${p.price} ₽<br>${p.characteristics || ''}</div><button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="green small">${inCart ? 'В корзине' : 'В корзину'}</button><span class="heart red-heart" onclick="toggleFavorite(${p.id})">❤️</span></div>`;
+  });
+  document.getElementById('favoritesItems').innerHTML = html;
+}
+
+function showAuthRequired() { showNotification("Войдите в аккаунт", "error"); show('login'); }
+function toggleCardFields() { document.getElementById('cardFields').style.display = document.getElementById('pay').value === 'Карта' ? 'block' : 'none'; }
+function showNotification(msg, type="info") { let n = document.createElement('div'); n.className = `notification ${type}`; n.innerHTML = msg; document.body.appendChild(n); setTimeout(()=>{ n.style.animation='slideOut 0.3s ease'; setTimeout(()=>n.remove(),300); },3000); }
+function scrollToSection(id) { document.getElementById(id).scrollIntoView({behavior:'smooth'}); }
+
+async function searchProducts() {
+  let query = document.getElementById('searchInput').value.trim();
+  if(!query) { showNotification("Введите запрос", "info"); return; }
+  try {
+    let res = await fetch(`/api/products/search/${encodeURIComponent(query)}`);
+    let results = await res.json();
+    if(!results.length) { showNotification("Ничего не найдено", "info"); return; }
+    let container = document.getElementById('categoryProducts');
+    show('category');
+    document.getElementById('categoryTitle').textContent = `Результаты поиска: "${query}"`;
+    container.innerHTML = '';
+    results.forEach(p => {
+      let inCart = cart.some(i => i.id === p.id);
+      let fav = favorites.includes(p.id);
+      container.innerHTML += `<div class="item"><div class="item-info"><strong>${p.name}</strong><div class="product-characteristics">${p.characteristics || ''}</div><span style="color:#e74c3c;">${p.price} ₽</span><div>В наличии: ${p.stock} шт.</div></div><div class="item-actions"><button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="green small">В корзину</button><span class="heart ${fav ? 'red-heart' : 'white-heart'}" onclick="toggleFavorite(${p.id})">${fav ? '❤️' : '🤍'}</span></div></div>`;
+    });
+  } catch(e) { showNotification("Ошибка поиска", "error"); }
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+  await loadProducts();
+  let savedUser = localStorage.getItem('user');
+  if(savedUser) {
+    try { user = JSON.parse(savedUser); } catch(e) {}
+  }
+  if(user) {
+    let savedCart = localStorage.getItem(`cart_${user.email}`);
+    if(savedCart) cart = JSON.parse(savedCart);
+    let savedFav = localStorage.getItem(`favorites_${user.email}`);
+    if(savedFav) favorites = JSON.parse(savedFav);
+    document.getElementById('loginBtn').classList.add('hidden');
+    document.getElementById('userPanel').classList.remove('hidden');
+    document.getElementById('userInfo').textContent = user.email;
+    updateFavCount();
+    document.getElementById('cartCount').innerText = cart.length;
+  }
+  show('home');
+  document.getElementById('cardNumber')?.addEventListener('input', function(e) { let v=this.value.replace(/\D/g,''); let f=''; for(let i=0;i<v.length&&i<16;i++){if(i>0&&i%4===0)f+=' '; f+=v[i];} this.value=f; });
+  document.getElementById('cardExpiry')?.addEventListener('input', function(e) { let v=this.value.replace(/\D/g,''); if(v.length>=2) this.value=v.slice(0,2)+'/'+v.slice(2,4); else this.value=v; });
+  document.getElementById('cardCVV')?.addEventListener('input', function(e) { this.value=this.value.replace(/\D/g,'').slice(0,3); });
+  document.getElementById('regPhone')?.addEventListener('input', function(e) { let v=this.value.replace(/\D/g,''); if(v.length>11) v=v.slice(0,11); let f=''; if(v.length>0) f=v[0]; if(v.length>1) f+='-'+v.slice(1,4); if(v.length>4) f+='-'+v.slice(4,7); if(v.length>7) f+='-'+v.slice(7,9); if(v.length>9) f+='-'+v.slice(9,11); this.value=f; });
+  document.getElementById('orderPhone')?.addEventListener('input', function(e) { let v=this.value.replace(/\D/g,''); if(v.length>11) v=v.slice(0,11); let f=''; if(v.length>0) f=v[0]; if(v.length>1) f+='-'+v.slice(1,4); if(v.length>4) f+='-'+v.slice(4,7); if(v.length>7) f+='-'+v.slice(7,9); if(v.length>9) f+='-'+v.slice(9,11); this.value=f; });
+  
+  if(!localStorage.getItem('rulesAccepted')) {
+    document.getElementById('rulesModal').style.display = 'flex';
+  }
+});
+
+window.closeRulesModal = closeRulesModal;
+window.show = show;
+window.login = login;
+window.register = register;
+window.logout = logout;
+window.showCategory = showCategory;
+window.toggleFavorite = toggleFavorite;
+window.addWithQuantity = addWithQuantity;
+window.changeQuantity = changeQuantity;
+window.removeFromCart = removeFromCart;
+window.openCart = openCart;
+window.finish = finish;
+window.cancelOrder = cancelOrder;
+window.renderOrders = renderOrders;
+window.searchProducts = searchProducts;
+window.showSupportForm = showSupportForm;
+window.hideSupportForm = hideSupportForm;
+window.sendSupportRequest = sendSupportRequest;
+window.showAuthRequired = showAuthRequired;
+window.toggleCardFields = toggleCardFields;
+window.scrollToSection = scrollToSection;
+</script>
+</body>
+</html>
