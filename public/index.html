@@ -650,7 +650,10 @@
         <button class="profile-btn"><i class="fas fa-user-circle"></i> Кабинет</button>
         <div class="profile-dropdown">
           <a onclick="show('catalog')"><i class="fas fa-list"></i> Каталог</a>
-          <a onclick="show('orders')"><i class="fas fa-clipboard-list"></i> Мои заказы</a>
+          <a onclick="show('orders')">
+            <i class="fas fa-clipboard-list"></i> Мои заказы 
+            <span id="ordersCount" class="fav-count" style="display: none; background: #3498db;">0</span>
+          </a>
           <a onclick="show('favorites')"><i class="fas fa-heart"></i> Избранное <span id="favCount" class="fav-count">0</span></a>
           <a onclick="openCart()"><i class="fas fa-shopping-cart"></i> Корзина <span id="cartCount" class="cart-count">0</span></a>
           <hr>
@@ -846,6 +849,31 @@
 </div>
 
 <script>
+  // Функция для обновления счетчика заказов
+async function updateOrdersCount() {
+  if (!user) return;
+  
+  try {
+    const response = await fetch(`/api/orders/${user.email}`);
+    const orders = await response.json();
+    
+    // Считаем только активные заказы (не отмененные)
+    const activeOrders = orders.filter(order => order.status !== 'cancelled');
+    const count = activeOrders.length;
+    
+    const ordersCountSpan = document.getElementById('ordersCount');
+    if (ordersCountSpan) {
+      if (count > 0) {
+        ordersCountSpan.textContent = count;
+        ordersCountSpan.style.display = 'inline-block';
+      } else {
+        ordersCountSpan.style.display = 'none';
+      }
+    }
+  } catch (error) {
+    console.error('Ошибка загрузки заказов:', error);
+  }
+}
 let cart = [];
 let user = null;
 let favorites = [];
@@ -947,6 +975,7 @@ async function login(email, password) {
       document.getElementById('userPanel').classList.remove('hidden');
       document.getElementById('userInfo').textContent = `${user.email}`;
       updateFavCount();
+      await updateOrdersCount();
       document.getElementById('cartCount').innerText = cart.length;
       showNotification("Добро пожаловать!", "success");
       show('catalog');
@@ -1204,6 +1233,8 @@ async function cancelOrder(id) {
   if(confirm("Отменить заказ?")) {
     await fetch(`/api/orders/${id}/cancel`, { method:'PUT' });
     showNotification("Заказ отменен", "info");
+    await updateOrdersCount();
+    await renderOrders();
     renderOrders();
   }
 }
@@ -1259,6 +1290,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('userInfo').textContent = user.email;
     updateFavCount();
     document.getElementById('cartCount').innerText = cart.length;
+    await updateOrdersCount();
   }
   show('home');
   document.getElementById('cardNumber')?.addEventListener('input', function(e) { let v=this.value.replace(/\D/g,''); let f=''; for(let i=0;i<v.length&&i<16;i++){if(i>0&&i%4===0)f+=' '; f+=v[i];} this.value=f; });
