@@ -631,6 +631,22 @@
   </div>
 </div>
 
+<div id="personalDataModal" class="rules-modal" style="display: none;">
+  <div class="rules-modal-content">
+    <h2><i class="fas fa-shield-alt"></i> Согласие на обработку персональных данных</h2>
+    <p style="line-height: 1.6; margin-bottom: 15px;">
+      Нажимая «Подтверждаю», вы даёте согласие на обработку своих персональных данных (ФИО, телефон, email) 
+      в целях оформления и доставки заказа, а также для получения информационных и рекламных сообщений. 
+      Ваши данные не передаются третьим лицам и защищены в соответствии с политикой конфиденциальности.
+    </p>
+    <div class="rules-checkbox">
+      <input type="checkbox" id="acceptPersonalData">
+      <label>Я ознакомлен(а) и даю согласие на обработку персональных данных</label>
+    </div>
+    <button onclick="closePersonalDataModal()" class="green" style="width:100%">Подтверждаю</button>
+  </div>
+</div>
+
 <div class="wrapper">
   <header style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 15px 20px;">
   <div class="logo"><i class="fas fa-car"></i> АВТОСТИЛЬ</div>
@@ -818,6 +834,12 @@
               <div class="col"><input id="cardExpiry" placeholder="ММ/ГГ" maxlength="5"></div>
               <div class="col"><input id="cardCVV" placeholder="CVV" maxlength="3" type="password"></div>
             </div>
+          </div>
+          <div style="margin: 15px 0; display: flex; align-items: center; gap: 10px;">
+            <input type="checkbox" id="personalDataAgree" style="width: 20px; margin: 0;">
+            <label for="personalDataAgree" style="font-size: 14px; color: #2c3e50;">
+              Я согласен на обработку персональных данных
+            </label>
           </div>
           <button onclick="finish()" class="green">Подтвердить заказ</button>
           <button class="gray" onclick="show('cart')">← Вернуться в корзину</button>
@@ -1107,6 +1129,45 @@ function removeFromCart(idx) {
 function openCart() { if(!user) { showAuthRequired(); return; } show('cart'); }
 
 async function finish() {
+  async function finish() {
+  if(!user) { 
+    showNotification("Войдите в аккаунт", "error"); 
+    show('login');
+    return; 
+  }
+  if(!cart.length) { 
+    showNotification("Корзина пуста", "error"); 
+    return; 
+  }
+  
+  // Проверка согласия с правилами магазина
+  const rulesAccepted = localStorage.getItem('rulesAccepted');
+  if(!rulesAccepted) { 
+    document.getElementById('rulesModal').style.display = 'flex';
+    return; 
+  }
+  
+  // ===== НОВАЯ ПРОВЕРКА: согласие на обработку персональных данных =====
+  const personalDataAgree = document.getElementById('personalDataAgree');
+  if(!personalDataAgree || !personalDataAgree.checked) {
+    showNotification("Необходимо согласие на обработку персональных данных", "error");
+    personalDataAgree.style.border = "1px solid #e74c3c";
+    personalDataAgree.style.outline = "1px solid #e74c3c";
+    setTimeout(() => {
+      personalDataAgree.style.border = "";
+      personalDataAgree.style.outline = "";
+    }, 2000);
+    return;
+  }
+  // ===== КОНЕЦ НОВОЙ ПРОВЕРКИ =====
+  
+  const pickup = document.getElementById('pickup').value;
+  const pay = document.getElementById('pay').value;
+  const phone = document.getElementById('orderPhone').value;
+  
+  // ... остальной код функции ...
+}
+
   if(!user) { 
     showNotification("Войдите в аккаунт", "error"); 
     show('login');
@@ -1302,6 +1363,25 @@ document.addEventListener('DOMContentLoaded', async function() {
   if(!localStorage.getItem('rulesAccepted')) {
     document.getElementById('rulesModal').style.display = 'flex';
   }
+  function showPersonalDataModal() {
+  document.getElementById('personalDataModal').style.display = 'flex';
+}
+
+function closePersonalDataModal() {
+  const checkbox = document.getElementById('acceptPersonalData');
+  if(!checkbox.checked) { 
+    alert("Подтвердите согласие на обработку персональных данных"); 
+    return; 
+  }
+  localStorage.setItem('personalDataAccepted', 'true');
+  document.getElementById('personalDataModal').style.display = 'none';
+  
+  // Автоматически ставим галочку в форме заказа
+  const personalDataAgree = document.getElementById('personalDataAgree');
+  if(personalDataAgree) personalDataAgree.checked = true;
+  
+  finish();
+}
 });
 
 window.closeRulesModal = closeRulesModal;
