@@ -621,18 +621,65 @@
 
 <!-- Модальное окно с согласием на обработку персональных данных -->
 <div id="personalDataModal" class="rules-modal" style="display: none;">
-  <div class="rules-modal-content">
-    <h2><i class="fas fa-shield-alt"></i> Согласие на обработку персональных данных</h2>
-    <p style="line-height: 1.6; margin-bottom: 15px;">
-      Нажимая «Подтверждаю», вы даёте согласие на обработку своих персональных данных (ФИО, телефон, email) 
-      в целях оформления и доставки заказа, а также для получения информационных и рекламных сообщений. 
-      Ваши данные не передаются третьим лицам и защищены в соответствии с политикой конфиденциальности.
-    </p>
-    <div class="rules-checkbox">
-      <input type="checkbox" id="acceptPersonalData">
-      <label>Я ознакомлен(а) и даю согласие на обработку персональных данных</label>
+  <div class="rules-modal-content" style="max-width: 700px;">
+    <h2 style="text-align: center; color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 15px;">
+      <i class="fas fa-shield-alt" style="color: #e74c3c;"></i> Согласие на обработку персональных данных
+    </h2>
+    
+    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; font-size: 13px; color: #555;">
+      <p style="margin: 0;">
+        Настоящим я, во исполнение требований Федерального закона от 27.07.2006 г. № 152-ФЗ 
+        «О персональных данных» (с изменениями и дополнениями) свободно, своей волей и в своем интересе, 
+        а также подтверждая свою дееспособность, даю свое согласие 
+        <strong>Индивидуальному предпринимателю Иманкулиеву Махмуду Рза-Оглы</strong> 
+        (ИНН 420524827176, ОГРНИП 319420500054273), место нахождения: г. Кемерово, проспект Кузнецкий 58, 
+        сайт: <strong>https://autostyle.up.railway.app</strong> (далее – Оператор), 
+        на обработку своих персональных данных на следующих условиях:
+      </p>
     </div>
-    <button onclick="closePersonalDataModal()" class="green" style="width:100%">Подтверждаю</button>
+
+    <h3 style="color: #e74c3c; font-size: 16px; margin: 20px 0 10px 0;">
+      <i class="fas fa-database"></i> 1. Объем обрабатываемых данных
+    </h3>
+    <p style="margin: 0 0 10px 20px; font-size: 14px;">Согласие дается на обработку следующих персональных данных:</p>
+    <ul style="margin: 0 0 15px 40px; font-size: 14px; line-height: 1.6;">
+      <li>номер телефона;</li>
+      <li>адрес электронной почты (e-mail);</li>
+      <li>платежные данные (номер банковской карты, срок действия), необходимые для проведения оплаты;</li>
+      <li>данные об автомобиле (марка, модель, год выпуска, VIN-номер – при указании);</li>
+      <li>пользовательские данные (тип устройства и разрешение экрана, источник перехода, IP-адрес и иные технические данные, автоматически передаваемые устройством при посещении сайта).</li>
+    </ul>
+
+    <h3 style="color: #e74c3c; font-size: 16px; margin: 15px 0 10px 0;">
+      <i class="fas fa-bullseye"></i> 2. Цели обработки
+    </h3>
+    <p style="margin: 0 0 15px 20px; font-size: 14px;">Обработка персональных данных осуществляется в целях:</p>
+    <ul style="margin: 0 0 15px 40px; font-size: 14px; line-height: 1.6;">
+      <li>приема и обработки заказов на автозапчасти;</li>
+      <li>обеспечения работы сайта и анализа его посещаемости.</li>
+    </ul>
+
+    <h3 style="color: #e74c3c; font-size: 16px; margin: 15px 0 10px 0;">
+      <i class="fas fa-gavel"></i> 3. Правовые основания
+    </h3>
+    <p style="margin: 0 0 15px 20px; font-size: 14px;">
+      Обработка персональных данных осуществляется на основании Федерального закона от 27.07.2006 № 152-ФЗ 
+      «О персональных данных», а также Политики обработки персональных данных, размещенной на сайте по адресу: 
+      <a href="https://autostyle.up.railway.app/privacy" target="_blank" style="color: #e74c3c;">https://autostyle.up.railway.app/privacy</a>
+    </p>
+
+    <div style="background: #fff3cd; padding: 12px; border-radius: 8px; margin: 15px 0; font-size: 12px; color: #856404; text-align: center;">
+      <i class="fas fa-info-circle"></i> Вы можете отозвать свое согласие в любое время, направив письменное уведомление на электронную почту styleauto42@mail.ru
+    </div>
+
+    <div class="rules-checkbox" style="justify-content: center; margin: 20px 0;">
+      <input type="checkbox" id="acceptPersonalData">
+      <label style="font-weight: 600;">Я ознакомлен(а) и даю согласие на обработку персональных данных</label>
+    </div>
+    
+    <button onclick="closePersonalDataModal()" class="green" style="width: 100%; padding: 12px; font-size: 16px;">
+      <i class="fas fa-check"></i> Подтверждаю
+    </button>
   </div>
 </div>
 
