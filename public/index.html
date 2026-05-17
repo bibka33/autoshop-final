@@ -39,12 +39,12 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
     header {
-      background: #fff;
+      background: #0a1a2f;
       padding: 15px 20px;
       display: flex;
       flex-direction: column;
       border-bottom: 2px solid #f0f0f0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     @media (min-width: 768px) {
       header {
@@ -67,14 +67,14 @@
       flex-wrap: wrap;
     }
     .logo {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
-      color: #2c3e50;
+      color: #ffd700;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
     .logo i {
-      color: #e74c3c;
+      color: #ffd700;
     }
     .search-bar {
       margin: 10px 0;
@@ -92,7 +92,7 @@
     .search-bar input {
       flex: 1;
       padding: 10px 15px;
-      border: 2px solid #ddd;
+      border: 2px solid #0a1a2f;
       border-radius: 6px;
       font-size: 14px;
     }
@@ -107,13 +107,13 @@
       flex-wrap: wrap;
     }
     footer {
-      background: #2c3e50;
+      background: #0a1a2f;
       color: #ecf0f1;
       padding: 25px 20px;
       text-align: left;
       font-size: 14px;
       margin-top: 40px;
-      border-top: 3px solid #e74c3c;
+      border-top: 3px solid #ffd700;
     }
     @media (min-width: 768px) {
       footer {
@@ -141,15 +141,16 @@
       padding: 0 10px;
     }
     h1, h2 {
-      color: #2c3e50;
+      color: #0a1a2f;
       margin-bottom: 25px;
       text-transform: uppercase;
       font-weight: 700;
     }
     h1 {
       font-size: 28px;
-      color: #e74c3c;
+      color: #ffd700;
       text-align: center;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
     @media (min-width: 768px) {
       h1 { font-size: 32px; }
@@ -157,7 +158,7 @@
     }
     h2 {
       font-size: 22px;
-      border-bottom: 3px solid #e74c3c;
+      border-bottom: 3px solid #ffd700;
       padding-bottom: 10px;
       margin-bottom: 25px;
     }
@@ -165,8 +166,8 @@
       padding: 12px 24px;
       border: none;
       border-radius: 6px;
-      background: #e74c3c;
-      color: #fff;
+      background: #ffd700;
+      color: #0a1a2f;
       cursor: pointer;
       font-size: 14px;
       font-weight: 600;
@@ -175,15 +176,16 @@
       letter-spacing: 0.5px;
     }
     button:hover { 
-      background: #c0392b; 
+      background: #e6b800; 
       transform: translateY(-2px);
+      color: #0a1a2f;
     }
-    button.gray { background: #95a5a6; }
-    button.gray:hover { background: #7f8c8d; }
-    button.blue { background: #3498db; }
-    button.blue:hover { background: #2980b9; }
-    button.green { background: #27ae60; }
-    button.green:hover { background: #219653; }
+    button.gray { background: #95a5a6; color: white; }
+    button.gray:hover { background: #7f8c8d; color: white; }
+    button.blue { background: #2980b9; color: white; }
+    button.blue:hover { background: #1a6a9e; color: white; }
+    button.green { background: #27ae60; color: white; }
+    button.green:hover { background: #219653; color: white; }
     button.small { padding: 6px 12px; font-size: 12px; }
     .hidden { display: none; }
     .item {
@@ -195,8 +197,8 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      border-left: 4px solid #e74c3c;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-left: 4px solid #ffd700;
       gap: 10px;
     }
     .item-info {
@@ -238,7 +240,7 @@
       margin-top: 5px;
     }
     .stock-badge.low {
-      color: #e74c3c;
+      color: #e67e22;
     }
     .heart { 
       cursor: pointer; 
@@ -257,8 +259,9 @@
       font-size: 14px;
     }
     input:focus, select:focus, textarea:focus {
-      border-color: #3498db;
+      border-color: #ffd700;
       outline: none;
+      box-shadow: 0 0 5px rgba(255,215,0,0.5);
     }
     .error { 
       color: #e74c3c; 
@@ -273,7 +276,7 @@
       max-width: 500px;
       margin: 0 auto;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      border-top: 4px solid #e74c3c;
+      border-top: 4px solid #ffd700;
     }
     .cart-item, .order-item {
       background: #fff;
@@ -281,7 +284,7 @@
       margin: 12px 0;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      border-left: 4px solid #e74c3c;
+      border-left: 4px solid #ffd700;
     }
     .cart-item {
       display: flex;
@@ -294,6 +297,7 @@
       background: #e74c3c;
       padding: 8px 16px;
       font-size: 12px;
+      color: white;
     }
     .remove-btn:hover, .cancel-order-btn:hover {
       background: #c0392b;
@@ -306,19 +310,21 @@
       cursor: pointer;
       font-weight: 600;
       font-size: 16px;
-      border-left: 4px solid #e74c3c;
+      border-left: 4px solid #ffd700;
       transition: all 0.3s ease;
       display: flex;
       align-items: center;
       gap: 12px;
+      color: #0a1a2f;
     }
     .catalog-category i {
-      color: #e74c3c;
+      color: #ffd700;
       font-size: 20px;
     }
     .catalog-category:hover {
       transform: translateX(8px);
       background: #f8f9fa;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .empty-message {
       text-align: center;
@@ -328,7 +334,7 @@
       border-radius: 12px;
     }
     .home-background {
-      background: linear-gradient(135deg, rgba(231,76,60,0.9), rgba(192,57,43,0.9));
+      background: linear-gradient(135deg, #0a1a2f, #1a3a5f);
       min-height: 200px;
       border-radius: 12px;
       margin-bottom: 30px;
@@ -341,7 +347,7 @@
       .home-background h1 { font-size: 36px; }
     }
     .home-background h1 {
-      color: white;
+      color: #ffd700;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
       margin-bottom: 10px;
     }
@@ -366,12 +372,15 @@
       border-radius: 12px;
       height: 100%;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border-left: 4px solid #e74c3c;
+      border-left: 4px solid #ffd700;
     }
     .feature-card i {
       font-size: 36px;
-      color: #e74c3c;
+      color: #ffd700;
       margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      color: #0a1a2f;
     }
     .shop-location {
       margin-top: 40px;
@@ -389,9 +398,9 @@
       align-items: center;
     }
     .shop-details { flex: 1; text-align: left; }
-    .shop-details h3 { color: #2c3e50; margin-bottom: 15px; }
+    .shop-details h3 { color: #0a1a2f; margin-bottom: 15px; }
     .shop-details p { color: #7f8c8d; margin-bottom: 10px; }
-    .shop-details i { width: 25px; color: #e74c3c; }
+    .shop-details i { width: 25px; color: #ffd700; }
     .shop-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
     .shop-map { flex: 1; min-width: 250px; }
     .shop-map img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
@@ -410,7 +419,7 @@
     }
     .notification.success { background: linear-gradient(135deg, #27ae60, #219653); }
     .notification.error { background: linear-gradient(135deg, #e74c3c, #c0392b); }
-    .notification.info { background: linear-gradient(135deg, #3498db, #2980b9); }
+    .notification.info { background: linear-gradient(135deg, #2980b9, #1a6a9e); }
     @keyframes slideIn {
       from { transform: translateX(100%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
@@ -444,7 +453,7 @@
       border-radius: 10px;
       z-index: 1000;
       margin-top: 5px;
-      border-top: 3px solid #e74c3c;
+      border-top: 3px solid #ffd700;
     }
     .profile-menu:hover .profile-dropdown { display: block; }
     .profile-dropdown a, .profile-dropdown button {
@@ -452,7 +461,7 @@
       align-items: center;
       gap: 10px;
       padding: 12px 20px;
-      color: #2c3e50;
+      color: #0a1a2f;
       text-decoration: none;
       width: 100%;
       text-align: left;
@@ -463,22 +472,24 @@
     }
     .profile-dropdown a:hover, .profile-dropdown button:hover {
       background: #f8f9fa;
-      color: #e74c3c;
+      color: #ffd700;
     }
     .profile-dropdown hr { margin: 8px 0; border-color: #ecf0f1; }
     .profile-btn {
-      background: #e74c3c !important;
+      background: #ffd700 !important;
+      color: #0a1a2f !important;
       border-radius: 6px !important;
       padding: 8px 16px !important;
     }
-    .profile-btn::after { content: '▼'; font-size: 10px; margin-left: 8px; }
+    .profile-btn::after { content: '▼'; font-size: 10px; margin-left: 8px; color: #0a1a2f; }
     .cart-count, .fav-count {
-      background: #e74c3c;
-      color: #fff;
+      background: #ffd700;
+      color: #0a1a2f;
       padding: 2px 8px;
       border-radius: 20px;
       font-size: 11px;
       margin-left: 6px;
+      font-weight: bold;
     }
     .rules-modal {
       position: fixed;
@@ -546,7 +557,7 @@
       border-radius: 10px;
       z-index: 1000;
       margin-top: 0;
-      border-top: 3px solid #e74c3c;
+      border-top: 3px solid #ffd700;
       animation: fadeIn 0.15s ease;
     }
     .profile-menu:hover .profile-dropdown {
@@ -576,7 +587,7 @@
       align-items: center;
       gap: 10px;
       padding: 12px 20px;
-      color: #2c3e50;
+      color: #0a1a2f;
       text-decoration: none;
       width: 100%;
       text-align: left;
@@ -588,7 +599,7 @@
     .profile-dropdown a:hover,
     .profile-dropdown button:hover {
       background: #f8f9fa;
-      color: #e74c3c;
+      color: #ffd700;
       padding-left: 25px;
     }
     .profile-dropdown hr {
@@ -603,7 +614,7 @@
 <!-- Модальное окно с правилами -->
 <div id="rulesModal" class="rules-modal">
   <div class="rules-modal-content">
-    <h2><i class="fas fa-gavel"></i> Правила магазина</h2>
+    <h2 style="color:#0a1a2f;"><i class="fas fa-gavel" style="color:#ffd700;"></i> Правила магазина</h2>
     <ul style="line-height: 1.8;">
       <li>Проверяйте совместимость товаров перед заказом</li>
       <li>Возврат возможен в течение 14 дней при наличии чека</li>
@@ -622,8 +633,8 @@
 <!-- Модальное окно с согласием на обработку персональных данных -->
 <div id="personalDataModal" class="rules-modal" style="display: none;">
   <div class="rules-modal-content" style="max-width: 700px;">
-    <h2 style="text-align: center; color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 15px;">
-      <i class="fas fa-shield-alt" style="color: #e74c3c;"></i> Согласие на обработку персональных данных
+    <h2 style="text-align: center; color: #0a1a2f; border-bottom: 2px solid #ffd700; padding-bottom: 15px;">
+      <i class="fas fa-shield-alt" style="color: #ffd700;"></i> Согласие на обработку персональных данных
     </h2>
     
     <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0; font-size: 13px; color: #555;">
@@ -633,12 +644,12 @@
         а также подтверждая свою дееспособность, даю свое согласие 
         <strong>Индивидуальному предпринимателю Иманкулиеву Махмуду Рза-Оглы</strong> 
         (ИНН 420524827176, ОГРНИП 319420500054273), место нахождения: г. Кемерово, проспект Кузнецкий 58, 
-        сайт: <strong>https://autostyle.up.railway.app</strong> (далее – Оператор), 
+        сайт: <strong>https://styleauto42.ru</strong> (далее – Оператор), 
         на обработку своих персональных данных на следующих условиях:
       </p>
     </div>
 
-    <h3 style="color: #e74c3c; font-size: 16px; margin: 20px 0 10px 0;">
+    <h3 style="color: #ffd700; font-size: 16px; margin: 20px 0 10px 0;">
       <i class="fas fa-database"></i> 1. Объем обрабатываемых данных
     </h3>
     <p style="margin: 0 0 10px 20px; font-size: 14px;">Согласие дается на обработку следующих персональных данных:</p>
@@ -650,7 +661,7 @@
       <li>пользовательские данные (тип устройства и разрешение экрана, источник перехода, IP-адрес и иные технические данные, автоматически передаваемые устройством при посещении сайта).</li>
     </ul>
 
-    <h3 style="color: #e74c3c; font-size: 16px; margin: 15px 0 10px 0;">
+    <h3 style="color: #ffd700; font-size: 16px; margin: 15px 0 10px 0;">
       <i class="fas fa-bullseye"></i> 2. Цели обработки
     </h3>
     <p style="margin: 0 0 15px 20px; font-size: 14px;">Обработка персональных данных осуществляется в целях:</p>
@@ -659,13 +670,13 @@
       <li>обеспечения работы сайта и анализа его посещаемости.</li>
     </ul>
 
-    <h3 style="color: #e74c3c; font-size: 16px; margin: 15px 0 10px 0;">
+    <h3 style="color: #ffd700; font-size: 16px; margin: 15px 0 10px 0;">
       <i class="fas fa-gavel"></i> 3. Правовые основания
     </h3>
     <p style="margin: 0 0 15px 20px; font-size: 14px;">
       Обработка персональных данных осуществляется на основании Федерального закона от 27.07.2006 № 152-ФЗ 
       «О персональных данных», а также Политики обработки персональных данных, размещенной на сайте по адресу: 
-      <a href="https://autostyle.up.railway.app/privacy.html" target="_blank" style="color: #e74c3c;">https://autostyle.up.railway.app/privacy.html</a>
+      <a href="https://styleauto42.ru/privacy.html" target="_blank" style="color: #ffd700;">https://styleauto42.ru/privacy.html</a>
     </p>
 
     <div style="background: #fff3cd; padding: 12px; border-radius: 8px; margin: 15px 0; font-size: 12px; color: #856404; text-align: center;">
@@ -689,14 +700,14 @@
     
     <div style="flex: 1; max-width: 500px; margin: 0 20px;">
       <div style="display: flex; gap: 10px;">
-        <input id="searchInput" type="text" placeholder="Поиск товаров по названию, категории, характеристикам..." style="flex: 1; padding: 10px 15px; border: 2px solid #ddd; border-radius: 8px;">
-        <button onclick="searchProducts()" class="blue" style="padding: 10px 20px;"><i class="fas fa-search"></i> ПОИСК</button>
+        <input id="searchInput" type="text" placeholder="Поиск товаров по названию, категории, характеристикам..." style="flex: 1; padding: 10px 15px; border: 2px solid #ffd700; border-radius: 8px;">
+        <button onclick="searchProducts()" style="background: #ffd700; color: #0a1a2f; padding: 10px 20px;"><i class="fas fa-search"></i> ПОИСК</button>
       </div>
     </div>
     
     <div class="user-menu">
-      <div id="userInfo" style="font-size: 13px;"></div>
-      <button id="loginBtn" onclick="show('login')" class="blue">ВОЙТИ</button>
+      <div id="userInfo" style="font-size: 13px; color: #0a1a2f;"></div>
+      <button id="loginBtn" onclick="show('login')" style="background: #ffd700; color: #0a1a2f;">ВОЙТИ</button>
       <div id="userPanel" class="hidden">
         <div class="profile-menu">
           <button class="profile-btn"><i class="fas fa-user-circle"></i> Кабинет</button>
@@ -704,7 +715,7 @@
             <a onclick="show('catalog')"><i class="fas fa-list"></i> Каталог</a>
             <a onclick="show('orders')">
               <i class="fas fa-clipboard-list"></i> Мои заказы 
-              <span id="ordersCount" class="fav-count" style="display: none; background: #3498db;">0</span>
+              <span id="ordersCount" class="fav-count" style="display: none; background: #ffd700; color:#0a1a2f;">0</span>
             </a>
             <a onclick="show('favorites')"><i class="fas fa-heart"></i> Избранное <span id="favCount" class="fav-count">0</span></a>
             <a onclick="openCart()"><i class="fas fa-shopping-cart"></i> Корзина <span id="cartCount" class="cart-count">0</span></a>
@@ -723,7 +734,7 @@
         <div class="home-background">
           <div>
             <h1>АВТОЗАПЧАСТИ LADA</h1>
-            <p style="font-size: 16px;">Оригинальные запчасти, аксессуары и автохимия</p>
+            <p style="font-size: 16px; color: #ecf0f1;">Оригинальные запчасти, аксессуары и автохимия</p>
           </div>
         </div>
         <div class="home-content">
@@ -734,7 +745,7 @@
             <div class="col"><div class="feature-card"><i class="fas fa-headset"></i><h3>Поддержка</h3><p>Консультации специалистов</p></div></div>
           </div>
           <div style="margin-top: 30px;">
-            <button onclick="show('catalog')" class="green" style="font-size: 16px;"><i class="fas fa-arrow-right"></i> ПЕРЕЙТИ В КАТАЛОГ</button>
+            <button onclick="show('catalog')" style="background: #ffd700; color: #0a1a2f;"><i class="fas fa-arrow-right"></i> ПЕРЕЙТИ В КАТАЛОГ</button>
             <button onclick="scrollToSection('contacts-section')" class="blue" style="font-size: 16px;"><i class="fas fa-info-circle"></i> О нас / Контакты</button>
             <button onclick="showSupportForm()" class="gray" style="font-size: 16px;"><i class="fas fa-headset"></i> Тех. поддержка</button>
           </div>
@@ -793,12 +804,12 @@
           <h2 style="text-align: center;">Авторизация</h2>
           <div class="auth-form" style="padding: 40px;">
             <div style="text-align: center; margin-bottom: 25px;">
-              <i class="fas fa-user-lock" style="font-size: 64px; color: #e74c3c;"></i>
+              <i class="fas fa-user-lock" style="font-size: 64px; color: #ffd700;"></i>
             </div>
             <input id="loginEmail" placeholder="E-MAIL" type="email" style="padding: 14px; font-size: 16px;">
             <input id="loginPass" type="password" placeholder="ПАРОЛЬ" style="padding: 14px; font-size: 16px;">
             <div id="loginError" class="error"></div>
-            <button onclick="login()" class="green" style="width: 100%; padding: 14px; margin-top: 10px;">ВОЙТИ</button>
+            <button onclick="login()" style="background: #ffd700; color: #0a1a2f; width: 100%; padding: 14px; margin-top: 10px;">ВОЙТИ</button>
             <button onclick="show('register')" class="gray" style="width: 100%; margin-top: 10px;">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             <button class="gray" onclick="show('home')" style="width: 100%; margin-top: 10px;">На главную</button>
           </div>
@@ -810,7 +821,7 @@
           <h2 style="text-align: center;">Регистрация</h2>
           <div class="auth-form" style="padding: 40px;">
             <div style="text-align: center; margin-bottom: 25px;">
-              <i class="fas fa-user-plus" style="font-size: 64px; color: #e74c3c;"></i>
+              <i class="fas fa-user-plus" style="font-size: 64px; color: #ffd700;"></i>
             </div>
             <input id="regEmail" placeholder="E-MAIL" type="email" style="padding: 14px; font-size: 16px;">
             <div id="regEmailError" class="error"></div>
@@ -818,8 +829,8 @@
             <div id="regPassError" class="error"></div>
             <input id="regPhone" placeholder="ТЕЛЕФОН (7-XXX-XXX-XX-XX)" maxlength="16" style="padding: 14px; font-size: 16px;">
             <div id="regPhoneError" class="error"></div>
-            <button onclick="register()" class="green" style="width: 100%; padding: 14px; margin-top: 10px;">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-            <p style="margin-top: 20px; text-align: center;">Уже зарегистрированы? <a href="#" onclick="show('login')" style="color:#e74c3c">ВОЙТИ</a></p>
+            <button onclick="register()" style="background: #ffd700; color: #0a1a2f; width: 100%; padding: 14px; margin-top: 10px;">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <p style="margin-top: 20px; text-align: center;">Уже зарегистрированы? <a href="#" onclick="show('login')" style="color:#ffd700;">ВОЙТИ</a></p>
             <button class="gray" onclick="show('home')" style="width: 100%; margin-top: 10px;">На главную</button>
           </div>
         </div>
@@ -841,8 +852,8 @@
       <section id="cart" class="hidden">
         <h2>Корзина</h2>
         <div id="cartItems"></div>
-        <h3 id="total" style="color:#e74c3c;"></h3>
-        <button onclick="show('order')" class="green" id="checkoutBtn">Оформить заказ</button>
+        <h3 id="total" style="color:#ffd700;"></h3>
+        <button onclick="show('order')" style="background: #ffd700; color: #0a1a2f;" id="checkoutBtn">Оформить заказ</button>
         <button class="gray" onclick="show('catalog')">Вернуться в каталог</button>
       </section>
 
@@ -873,11 +884,11 @@
           </div>
           <div style="margin: 15px 0; display: flex; align-items: center; gap: 10px;">
             <input type="checkbox" id="personalDataAgree" style="width: 20px; margin: 0;">
-            <label for="personalDataAgree" style="font-size: 14px; color: #2c3e50;">
-              Я согласен на <a href="#" onclick="showPersonalDataModal(); return false;" style="color: #e74c3c;">обработку персональных данных</a>
+            <label for="personalDataAgree" style="font-size: 14px; color: #0a1a2f;">
+              Я согласен на <a href="#" onclick="showPersonalDataModal(); return false;" style="color: #ffd700;">обработку персональных данных</a>
             </label>
           </div>
-          <button onclick="finish()" class="green">Подтвердить заказ</button>
+          <button onclick="finish()" style="background: #ffd700; color: #0a1a2f;">Подтвердить заказ</button>
           <button class="gray" onclick="show('cart')">← Вернуться в корзину</button>
         </div>
       </section>
@@ -1084,7 +1095,7 @@ function showCategory(categoryName) {
     container.innerHTML += `
       <div class="item">
         <div class="item-info">
-          <strong style="font-size:16px;">${p.name}</strong>
+          <strong style="font-size:16px; color:#0a1a2f;">${p.name}</strong>
           <div class="product-characteristics"><i class="fas fa-info-circle"></i> ${p.characteristics || 'Характеристики не указаны'}</div>
           <div><span style="color:#e74c3c;font-weight:600;font-size:18px;">${p.price} ₽</span></div>
           <div class="stock-badge ${stockLeft < 5 ? 'low' : ''}"><i class="fas fa-boxes"></i> В наличии: ${stockLeft} шт.</div>
@@ -1325,7 +1336,7 @@ function renderFavorites() {
   let html = '';
   favItems.forEach(p => {
     let inCart = cart.some(i => i.id === p.id);
-    html += `<div class="item"><div class="item-info"><strong>${p.name}</strong><br>${p.price} ₽<br>${p.characteristics || ''}</div><button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="green small">${inCart ? 'В корзине' : 'В корзину'}</button><span class="heart red-heart" onclick="toggleFavorite(${p.id})">❤️</span></div>`;
+    html += `<div class="item"><div class="item-info"><strong style="color:#0a1a2f;">${p.name}</strong><br>${p.price} ₽<br>${p.characteristics || ''}</div><button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="green small">${inCart ? 'В корзине' : 'В корзину'}</button><span class="heart red-heart" onclick="toggleFavorite(${p.id})">❤️</span></div>`;
   });
   document.getElementById('favoritesItems').innerHTML = html;
 }
@@ -1349,7 +1360,7 @@ async function searchProducts() {
     results.forEach(p => {
       let inCart = cart.some(i => i.id === p.id);
       let fav = favorites.includes(p.id);
-      container.innerHTML += `<div class="item"><div class="item-info"><strong>${p.name}</strong><div class="product-characteristics">${p.characteristics || ''}</div><span style="color:#e74c3c;">${p.price} ₽</span><div>В наличии: ${p.stock} шт.</div></div><div class="item-actions"><button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="green small">В корзину</button><span class="heart ${fav ? 'red-heart' : 'white-heart'}" onclick="toggleFavorite(${p.id})">${fav ? '❤️' : '🤍'}</span></div></div>`;
+      container.innerHTML += `<div class="item"><div class="item-info"><strong style="color:#0a1a2f;">${p.name}</strong><div class="product-characteristics">${p.characteristics || ''}</div><span style="color:#e74c3c;">${p.price} ₽</span><div>В наличии: ${p.stock} шт.</div></div><div class="item-actions"><button onclick="addWithQuantity(${p.id})" ${inCart ? 'disabled' : ''} class="green small">В корзину</button><span class="heart ${fav ? 'red-heart' : 'white-heart'}" onclick="toggleFavorite(${p.id})">${fav ? '❤️' : '🤍'}</span></div></div>`;
     });
   } catch(e) { showNotification("Ошибка поиска", "error"); }
 }
